@@ -21,7 +21,8 @@ function getLocation() {
 
 function showPosition(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
+  "<br>Longitude: " + position.coords.longitude + 
+  `<br>https://www.openstreetmap.org/#map=18/${position.coords.latitude}/${position.coords.longitude}`;
 }
 </script>
 
